@@ -1,0 +1,22 @@
+{{!-- 
+  // ============================================================================
+  // oBundle Code Task #2: Add category buttons to add and remove all products 
+  //                       to and from cart.
+  // ============================================================================
+  //
+  // - New Component categoryCart uses camelCase name as recommended by 
+  //   https://bigcommerce.stoplight.io/docs/docs/docs/stencil-docs/storefront-customization/theme-assets.md#components-vs-utilities
+  //   and https://github.com/bigcommerce/sass-style-guide#components
+  //
+  // - Clicking categoryCart-add adds all products in the category to Cart
+  // - Clicking categoryCart-remove empties the cart
+  // ============================================================================
+--}}
+<div class="categoryCart">
+    <button class="categoryCart-add button button-primary" 
+        data-wait-message="{{lang 'products.adding_to_cart'}}">Add All To Cart
+    </button>
+    <button class="categoryCart-remove button button-primary"
+        data-wait-message="{{lang 'products.removing_from_cart'}}">Remove All Items
+    </button>
+</div>

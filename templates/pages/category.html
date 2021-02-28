@@ -6,6 +6,7 @@ category:
 ---
 {{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
 {{inject "categoryId" category.id}}
+{{inject "allProductsInCategory" category.products}}
 {{#partial "head"}}
     {{#if pagination.category.previous}}
         <link rel="prev" href="{{pagination.category.previous}}">
@@ -13,6 +14,8 @@ category:
     {{#if pagination.category.next}}
         <link rel="next" href="{{pagination.category.next}}">
     {{/if}}
+    <!-- Gimme the emoji's :) -->
+    <meta charset="UTF-8">
 {{/partial}}
 
 {{#partial "page"}}
@@ -49,6 +52,13 @@ category:
     {{/if}}
 
     <main class="page-content" id="product-listing-container">
+        {{!--
+            // =============================================================================
+            // oBundle Code Task #2: Add category buttons to add and remove all products to
+            //                       and from cart.
+            // =============================================================================
+        --}}
+        {{> components/category/categoryCart}}
         {{> components/category/product-listing}}
         {{{region name="category_below_content"}}}
     </main>

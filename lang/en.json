@@ -738,6 +738,7 @@
         },
         "add_to_cart": "Add to Cart",
         "adding_to_cart": "Adding to cart…",
+        "removing_from_cart": "Removing Items...",
         "options": "Options",
         "none": "None",
         "sku": "SKU:",
