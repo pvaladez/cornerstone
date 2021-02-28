@@ -130,7 +130,7 @@ export default class Category extends CatalogPage {
         //                       to and from cart.
         // ============================================================================
         //
-        // - Clicking categoryCart-add adds all products in the category to Cart
+        // - Clicking categoryCart-add adds all products in the category to cart
         //   - Products in category with options will not be added automatically
         //   - Notification after add gives option to view cart
         // - Clicking categoryCart-remove empties the cart
