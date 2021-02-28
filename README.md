@@ -43,7 +43,7 @@ Created the Special Item product with three images and the category Special Item
    7. *Refer to **[this GitHub commit](https://github.com/pvaladez/cornerstone/commit/dfadf9d3ff2d7c1acff1aa5fa7e4b6a45d8c1553)** for all code changes*
 3. **Bonus Task: Banner in header that shows customer info when a customer is logged in**
    1. I put the info in components/navigation.html, which means the customer info shows up on all pages.  If you only wanted it on the category page we would cut and paste into either pages/category.html or components/category/categoryCart.html
-   2. To see this in action, log in as my user: jsmith@example.com and use the password I sent to you.
+   2. To see this in action, log in as my user: jsmith@example.com with password H7CddsaGk5vqvL3
    3. File changes include:
       1. `templates/components/common/navigation.html`
    4. *Refer to **[this GitHub commit](https://github.com/pvaladez/cornerstone/commit/41fbaad91c211bad0dd3f8dae778d2437e986250)** for all code changes*
