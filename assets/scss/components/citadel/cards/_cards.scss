@@ -77,32 +77,6 @@
     font-family: 'object-fit: contain;';
 }
 
-// 
-// oBundle Code Task #1 - Show secondary image on hover
-//
-// Purpose: .card-image--hover will be shown when hover over .card-figure
-//
-// -----------------------------------------------------------------------------
-.card-image {
-    transition: opacity 0.45s;
-}
-
-.card-image--hover {
-    opacity: 0;
-}
-
-.card-figure:hover {
-    .card-image:not(.card-image--hover) {
-        opacity: 0;
-    }
-    .card-image--hover {
-        opacity: 1;
-    }
-}
-// 
-// End of oBundle Code Task #1
-// -----------------------------------------------------------------------------
-
 .card-title {
     font-size: $card-title-fontSize;
     margin: $card-title-margin;

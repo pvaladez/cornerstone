@@ -53,49 +53,7 @@
                     lazyload=theme_settings.lazyload_mode
                     default_image=theme_settings.default_image_product
                 }}
-                {{!-- 
-                    // -----------------------------------------------------------------------------
-                    // oBundle Code Task #1: Show secondary product image on hover 
-                    // -----------------------------------------------------------------------------
-                --}}
-                {{!-- 
-                    // -----------------------------------------------------------------------------
-                    // First, check if there are at least two images available 
-                    // -----------------------------------------------------------------------------
-                --}}
-                {{#if (length images) '>=' 2}}
-                    {{!-- 
-                        // -----------------------------------------------------------------------------
-                        // Then check if first image is selected for thumbnail by 
-                        // comparing the data field. If it's not the same then use the  
-                        // first image.  Otherwise, use the second image. This logic 
-                        // preserves the ability to choose an image for the thumbnail
-                        // and to choose from more than the first two images.
-                        // -----------------------------------------------------------------------------
-                    --}}
-                    {{#unless images.[0].data '===' image.data}}
-                        {{> components/common/responsive-img
-                            image=images.[0]
-                            class="card-image card-image--hover"
-                            fallback_size=theme_settings.productgallery_size
-                            lazyload=theme_settings.lazyload_mode
-                            default_image=theme_settings.default_image_product
-                        }}
-                    {{else}}
-                        {{> components/common/responsive-img
-                            image=images.[1]
-                            class="card-image card-image--hover"
-                            fallback_size=theme_settings.productgallery_size
-                            lazyload=theme_settings.lazyload_mode
-                            default_image=theme_settings.default_image_product
-                        }}
-                    {{/unless}}
-                {{/if}}
-                {{!-- 
-                    // -----------------------------------------------------------------------------
-                    // End of oBundle Code Task #1
-                    // -----------------------------------------------------------------------------
-                --}}
+                {{> ob-custom/ob-card }}
             </div>
         </a>
 
